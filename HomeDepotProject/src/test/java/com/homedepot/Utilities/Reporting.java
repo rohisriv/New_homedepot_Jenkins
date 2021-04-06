@@ -29,8 +29,9 @@ public class Reporting extends TestListenerAdapter
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Rohini-Test-Report-"+timeStamp+".html";
+		String repName1="Rohini-Test-Report-For-Jenkins";
 		
-		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName);//specify location of the report
+		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName1);//specify location of the report
 		//htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
 		extent=new ExtentReports();
@@ -76,7 +77,7 @@ public class Reporting extends TestListenerAdapter
 	
 	public void onTestSkipped(ITestResult testresult)
 	{
-		testlogger=extent.createTest(testresult.getName()); // create new entry in th report
+		testlogger=extent.createTest(testresult.getName()); // create new entry in the report
 		testlogger.log(Status.SKIP,MarkupHelper.createLabel(testresult.getName(),ExtentColor.ORANGE));
 	}
 	

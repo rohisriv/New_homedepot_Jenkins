@@ -36,11 +36,11 @@ public class BaseClassHomeDepot {
 		if(br.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-			//ChromeOptions op = new ChromeOptions();
-			//op.setHeadless(true);
-			//op.addArguments("window-size=1920,1080");
-			//driver = new ChromeDriver(op);
-			driver = new ChromeDriver();
+			ChromeOptions op = new ChromeOptions();
+			op.setHeadless(true);
+			op.addArguments("window-size=1920,1080");
+			driver = new ChromeDriver(op);
+			//driver = new ChromeDriver();
 		}
 		else if(br.equals("IE")) 
 		{
@@ -62,10 +62,10 @@ public class BaseClassHomeDepot {
 		System.out.println("Screenshot taken");
 	}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void teardown() {
 		driver.quit();
-	}*/
+	}
 	
 
 }

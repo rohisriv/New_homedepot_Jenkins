@@ -71,7 +71,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		System.out.println(qs);
 		
 		Assert.assertEquals(qs, "Verification Code Entry");
-		driver.quit();
+		
 		
 		
 	}
@@ -96,7 +96,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		Assert.assertTrue((hspo.getProdcolor_btn().isDisplayed()) && (hspo.getProdheight_btn().isDisplayed()) && (hspo.getProdwidth_btn().isDisplayed()));
 		    
-		driver.quit();
+		
 	}
 	
 	@Test
@@ -151,7 +151,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		Assert.assertTrue(s1.equalsIgnoreCase("1 - Schaumburg #1904") && s2.equalsIgnoreCase("2 - Elk Grove Village #6701"));
 		
-		driver.quit();
+		
 		
 	}
 	
@@ -225,7 +225,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		assertEquals(driver.getTitle(),"The Home Depot Gift Cards by CashStar");
 		
-		driver.quit();
+		
 		
 	}
 	

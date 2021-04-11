@@ -32,7 +32,7 @@ public class Reporting extends TestListenerAdapter
 		String repName1="Rohini-Test-Report-For-Jenkins.html";
 		
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName1);//specify location of the report
-		//htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
+		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
 		extent=new ExtentReports();
 		

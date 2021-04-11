@@ -30,6 +30,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	public void login_001() throws InterruptedException, IOException
 	{
 		
+		System.out.println("STARTING TEST CASE FOR LOGIN TO HOMEDEPOT....");
 		LoginPO lpo = new LoginPO(driver);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		WebElement elem1,elem2;
@@ -80,6 +81,8 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	public void searchanitem_tc002() throws InterruptedException  
 	{
 		
+		System.out.println("STARTING TEST CASE FOR SEARCH AN ITEM....");
+		
 		HomeScreenPO hspo = new HomeScreenPO(driver);
 		 
 		hspo.setsearch("wooden crates");
@@ -103,7 +106,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	public void findastore_003() throws InterruptedException, IOException
 	{
 		
-		
+		System.out.println("STARTING TEST CASE FOR FIND A STORE....");
 		StoreFinderPO sfpo = new StoreFinderPO(driver);
 		EventFiringWebDriver efw = new EventFiringWebDriver(driver);
 		String path=System.getProperty("user.dir")+"/src/test/java/com/homedepot/TestData/JiraFormat_TC_Upload.xlsx";
@@ -159,6 +162,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	public void giftcards_004() throws InterruptedException, IOException
 	{
 		
+		System.out.println("STARTING TEST CASE FOR GIFT CARDS....");
 		GiftCardsPO gcpo = new GiftCardsPO(driver);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		String path=System.getProperty("user.dir")+"/src/test/java/com/homedepot/TestData/JiraFormat_TC_Upload.xlsx";

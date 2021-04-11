@@ -28,10 +28,10 @@ public class Reporting extends TestListenerAdapter
 	public void onStart(ITestContext testContext)
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
-		String repName="Rohini-Test-Report-"+timeStamp+".html";
-		//String repName1="Rohini-Test-Report-For-Jenkins.html";
+		//String repName="Rohini-Test-Report-"+timeStamp+".html";
+		String repName1="Rohini-Test-Report-For-Jenkins.html";
 		
-		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/Rohini-Reports"+repName);//specify location of the report
+		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/test-output/"+repName1);//specify location of the report
 		//htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
 		extent=new ExtentReports();

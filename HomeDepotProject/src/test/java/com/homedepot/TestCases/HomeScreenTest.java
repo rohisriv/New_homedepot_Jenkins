@@ -78,25 +78,34 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	}
 	
 	@Test
-	public void searchanitem_tc002() throws InterruptedException  
+	public void searchanitem_tc002() throws InterruptedException, IOException  
 	{
 		
 		System.out.println("STARTING TEST CASE FOR SEARCH AN ITEM....");
 		
 		HomeScreenPO hspo = new HomeScreenPO(driver);
 		 
+		System.out.println("Writing wooden crates...");
+		captureScreen(driver,"woodencrates");
 		hspo.setsearch("wooden crates");
 		hspo.clicksrchbtn();
 		
+		System.out.println("Searching width....");
+		captureScreen(driver,"widthscreen");
 		Thread.sleep(3000);
 		hspo.clickwidthCB1();
 		
+		System.out.println("Searching height...");
+		captureScreen(driver,"heightscreen");
 		Thread.sleep(3000);
 		hspo.clickheightCB1();
 		
+		System.out.println("Searching color...");
+		captureScreen(driver,"colorscreen");
 		Thread.sleep(3000);
 		hspo.clickcolorCB1();
 		System.out.println("Here after clicking all the options and now asserting.....");
+		captureScreen(driver,"finalscreen");
 		
 		Thread.sleep(3000);
 		Assert.assertTrue((hspo.getProdcolor_btn().isDisplayed()) && (hspo.getProdheight_btn().isDisplayed()) && (hspo.getProdwidth_btn().isDisplayed()));

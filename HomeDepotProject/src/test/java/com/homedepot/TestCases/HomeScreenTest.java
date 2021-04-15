@@ -62,7 +62,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		System.out.println("The Title of the current page is ... " + driver.getTitle());
 		captureScreen(driver,"LoginscreenCapture");
-		Assert.assertEquals(driver.getTitle(),"The Home Depot");
+		Assert.assertEquals(driver.getTitle(),"The Home Depot: sign in, create or secure your account");
 		
 		//WebElement q = driver.findElement(By.xpath("//*[@id=\"single-signin__body\"]/div/div[1]/div/div/p"));
 		//String qs = q.getText();

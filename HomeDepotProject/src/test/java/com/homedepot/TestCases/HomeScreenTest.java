@@ -106,7 +106,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		System.out.println("Searching color...");
 		captureScreen(driver,"colorscreen");
-		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodcolor());
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodheightCB1());
 		Thread.sleep(5000);
 		hspo.clickcolorCB1();
 		

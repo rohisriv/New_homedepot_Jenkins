@@ -64,7 +64,7 @@ public class BaseClassHomeDepot {
 	
 	@AfterMethod
 	public void teardown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 

@@ -91,16 +91,18 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		hspo.clicksrchbtn();
 		
 		System.out.println("Searching width....");
-		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodwidthheader());
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_deptlist());
 		captureScreen(driver,"widthscreen");
 		Thread.sleep(5000);
 		hspo.clickwidthCB1();
+		System.out.println("width clicked...");
 		
 		System.out.println("Searching height...");
 		captureScreen(driver,"heightscreen");
-		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodheightCB1());
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodwidthCB1());
 		Thread.sleep(5000);
 		hspo.clickheightCB1();
+		System.out.println("height clicked...");
 		
 		System.out.println("Searching color...");
 		captureScreen(driver,"colorscreen");

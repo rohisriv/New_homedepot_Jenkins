@@ -96,6 +96,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		Thread.sleep(3000);
 		hspo.clickcolorCB1();
+		System.out.println("Here after clicking all the options and now asserting.....");
 		
 		Thread.sleep(3000);
 		Assert.assertTrue((hspo.getProdcolor_btn().isDisplayed()) && (hspo.getProdheight_btn().isDisplayed()) && (hspo.getProdwidth_btn().isDisplayed()));

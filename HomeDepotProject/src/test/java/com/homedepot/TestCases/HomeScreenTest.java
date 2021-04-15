@@ -80,7 +80,7 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 	@Test
 	public void searchanitem_tc002() throws InterruptedException, IOException  
 	{
-		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		System.out.println("STARTING TEST CASE FOR SEARCH AN ITEM....");
 		
 		HomeScreenPO hspo = new HomeScreenPO(driver);
@@ -92,18 +92,23 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		System.out.println("Searching width....");
 		captureScreen(driver,"widthscreen");
-		Thread.sleep(3000);
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodwidthCB1());
+		Thread.sleep(5000);
 		hspo.clickwidthCB1();
 		
 		System.out.println("Searching height...");
 		captureScreen(driver,"heightscreen");
-		Thread.sleep(3000);
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodheightCB1());
+		Thread.sleep(5000);
 		hspo.clickheightCB1();
 		
 		System.out.println("Searching color...");
 		captureScreen(driver,"colorscreen");
-		Thread.sleep(3000);
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodcolor());
+		Thread.sleep(5000);
 		hspo.clickcolorCB1();
+		
+		
 		System.out.println("Here after clicking all the options and now asserting.....");
 		captureScreen(driver,"finalscreen");
 		

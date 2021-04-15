@@ -9,7 +9,7 @@
     <classes>
       <class name="com.homedepot.TestCases.HomeScreenTest">
         <methods>
-          <include name="searchanitem_tc002"/>
+          <include name="login_001"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

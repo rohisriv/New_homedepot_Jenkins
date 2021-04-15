@@ -11,10 +11,10 @@
 		<classes>
 			<class name="com.homedepot.TestCases.HomeScreenTest">
 				<methods>
-			        <exclude name ="giftcards_004"/>
-					<exclude name ="findastore_003"/>
+			        <include name ="giftcards_004"/>
+					<include name ="findastore_003"/>
 					<include name ="searchanitem_tc002"/>
-					<exclude name ="login_001"/>
+					<include name ="login_001"/>
 				</methods> 
 			</class>
 		</classes>

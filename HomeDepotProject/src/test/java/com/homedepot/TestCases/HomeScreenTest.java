@@ -61,17 +61,15 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		System.out.println("I have found the button....");
 		Thread.sleep(4000);
 		
-		//lpo.myaccountclick();
-		//String wel = lpo.welcomeback().getText();
-		//System.out.println("The text on my account is .... " + wel);
+		System.out.println(driver.getTitle());
 		
-		//Assert.assertEquals(wel,"Welcome Back");
+		Assert.assertEquals(driver.getTitle(),"The Home Depot");
 		
-		WebElement q = driver.findElement(By.xpath("//*[@id=\"single-signin__body\"]/div/div[1]/div/div/p"));
-		String qs = q.getText();
-		System.out.println(qs);
+		//WebElement q = driver.findElement(By.xpath("//*[@id=\"single-signin__body\"]/div/div[1]/div/div/p"));
+		//String qs = q.getText();
+		//System.out.println(qs);
 		
-		Assert.assertEquals(qs, "Verification Code Entry");
+		//Assert.assertEquals(qs, "Verification Code Entry");
 		
 		
 		

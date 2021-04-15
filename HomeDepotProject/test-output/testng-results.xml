@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Homedepot" duration-ms="31970" started-at="2021-04-15T18:00:43Z" finished-at="2021-04-15T18:01:15Z">
+  <suite name="Homedepot" duration-ms="23330" started-at="2021-04-15T18:08:55Z" finished-at="2021-04-15T18:09:18Z">
     <groups>
     </groups>
-    <test name="HomeDepot Test" duration-ms="31970" started-at="2021-04-15T18:00:43Z" finished-at="2021-04-15T18:01:15Z">
+    <test name="HomeDepot Test" duration-ms="23330" started-at="2021-04-15T18:08:55Z" finished-at="2021-04-15T18:09:18Z">
       <class name="com.homedepot.TestCases.HomeScreenTest">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="setup" is-config="true" duration-ms="5456" started-at="2021-04-15T18:00:43Z" finished-at="2021-04-15T18:00:48Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="setup" is-config="true" duration-ms="5014" started-at="2021-04-15T18:08:55Z" finished-at="2021-04-15T18:09:00Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="searchanitem_tc002()[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="searchanitem_tc002" duration-ms="25707" started-at="2021-04-15T18:00:48Z" finished-at="2021-04-15T18:01:14Z">
+        <test-method status="PASS" signature="login_001()[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="login_001" duration-ms="17388" started-at="2021-04-15T18:09:00Z" finished-at="2021-04-15T18:09:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchanitem_tc002 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="teardown" is-config="true" duration-ms="626" started-at="2021-04-15T18:01:14Z" finished-at="2021-04-15T18:01:15Z">
+        </test-method> <!-- login_001 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.homedepot.TestCases.HomeScreenTest@53b32d7]" name="teardown" is-config="true" duration-ms="736" started-at="2021-04-15T18:09:18Z" finished-at="2021-04-15T18:09:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

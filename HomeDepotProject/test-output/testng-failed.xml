@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Homedepot]">
+  <listeners>
+    <listener class-name="com.homedepot.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="HomeDepot Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.homedepot.TestCases.HomeScreenTest">
         <methods>
           <include name="searchanitem_tc002"/>
           <include name="setup"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.homedepot.TestCases.HomeScreenTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- HomeDepot Test(failed) -->
+</suite> <!-- Failed suite [Homedepot] -->

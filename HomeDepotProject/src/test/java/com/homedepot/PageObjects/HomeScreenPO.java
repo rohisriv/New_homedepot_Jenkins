@@ -34,8 +34,8 @@ WebDriver localdriver;
 	@CacheLookup
 	WebElement ele_prodwidthheader;
 	
-	//@FindBy(xpath = "//body/div[@id='root']/div[1]/div[3]/div[1]/div[6]/div[1]/section[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]")
-	@FindBy(id = "1z1bdoe-0")
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[3]/div[1]/div[6]/div[1]/section[1]/div[1]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]")
+	//@FindBy(id = "1z1bdoe-0")
 	@CacheLookup
 	WebElement ele_prodwidthCB1;
 	
@@ -74,6 +74,9 @@ WebDriver localdriver;
 	 */
 	public WebElement getEle_prodwidthCB1() {
 		return ele_prodwidthCB1;
+	}
+	public WebElement getEle_prodwidthheader() {
+		return ele_prodwidthheader;
 	}
 
 	/**

@@ -91,8 +91,8 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		hspo.clicksrchbtn();
 		
 		System.out.println("Searching width....");
+		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodwidthheader());
 		captureScreen(driver,"widthscreen");
-		js.executeScript("arguments[0].scrollIntoView(true);",hspo.getEle_prodwidthCB1());
 		Thread.sleep(5000);
 		hspo.clickwidthCB1();
 		

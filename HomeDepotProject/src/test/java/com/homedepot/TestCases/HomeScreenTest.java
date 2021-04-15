@@ -57,12 +57,11 @@ public class HomeScreenTest extends BaseClassHomeDepot {
 		
 		System.out.println("Trying to click sign in button....");
 		lpo.signinbutton();
-		
-		System.out.println("I have found the button....");
+		//System.out.println("I have found the button....");
 		Thread.sleep(4000);
 		
-		System.out.println(driver.getTitle());
-		
+		System.out.println("The Title of the current page is ... " + driver.getTitle());
+		captureScreen(driver,"LoginscreenCapture");
 		Assert.assertEquals(driver.getTitle(),"The Home Depot");
 		
 		//WebElement q = driver.findElement(By.xpath("//*[@id=\"single-signin__body\"]/div/div[1]/div/div/p"));
